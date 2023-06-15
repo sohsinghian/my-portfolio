@@ -3,11 +3,11 @@ import React from "react";
 const Home = () => {
   return (
     <>
-      <div className="mt-56 font-bold text-center text-5xl" id="">
-        <p>
-          Hi, I'm <span className="text-sky-600">Sing Hian</span>
+      <div className="pt-40 mt-16 font-bold text-center h-screen bg-sky-300" id="">
+        <p className="text-5xl">
+          Hi, I'm <span className="text-sky-600">Sing Hian.</span>
         </p>
-        <p>Software Engineer</p>
+        <p className="text-3xl mt-2">Software Engineer</p>
       </div>
     </>
   );

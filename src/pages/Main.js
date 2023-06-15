@@ -9,12 +9,12 @@ import ContactLinks from "../components/ContactLinks";
 const Main = () => {
   return (
     <>
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <ContactLinks />
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <ContactLinks />
     </>
   );
 };
