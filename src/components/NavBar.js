@@ -6,8 +6,8 @@ const NavBar = () => {
   return (
     <>
       <header className="flex flex-row justify-between">
-        <nav className="h-fit basis-full flex flex-row justify-between my-6">
-          <ul className="flex flex-row ml-10">
+        <nav className="fixed w-full h-16 z-[100] bg-slate-100">
+          <ul className="flex flex-row ml-10 mt-4">
             <li className="mr-10 hover:font-bold hover:underline underline-offset-4">
               <HashLink to="/#" smooth>
                 Home

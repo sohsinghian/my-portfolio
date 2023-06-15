@@ -2,9 +2,11 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div>
-      <h1 id="#skills">Skills</h1>
-    </div>
+    <>
+      <div id="skills">
+        <h1>Skills</h1>
+      </div>
+    </>
   );
 };
 
