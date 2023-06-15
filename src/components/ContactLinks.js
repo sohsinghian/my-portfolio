@@ -6,7 +6,11 @@ import github from "../images/github-icon.jpeg";
 const ContactLinks = () => {
   return (
     <>
-      <div className="flex items-center justify-between m-auto max-w-[330px] py-8">
+      <div
+        className="flex items-center justify-between m-auto max-w-[330px] py-8"
+        id="contact"
+      >
+        <p>Contact Me!</p>
         <img src={email} alt="email" width="30" height="30" />
         <div className="rounded-full ">
           <img src={linkedin} alt="linkedin" width="30" height="30" />
