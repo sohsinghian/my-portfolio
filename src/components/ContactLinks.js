@@ -1,7 +1,7 @@
 import React from "react";
-import email from "../images/email-icon.jpeg";
+import email from "../images/email-icon.png";
 import linkedin from "../images/linkedin-icon.png";
-import github from "../images/github-icon.jpeg";
+import github from "../images/github-icon.png";
 
 const ContactLinks = () => {
   return (

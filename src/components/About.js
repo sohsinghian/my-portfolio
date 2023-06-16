@@ -3,8 +3,9 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div className="text-center h-screen" id="about">
-        <h1 className="pt-48 mb-8 font-bold text-5xl">About</h1>
+      <div className="text-center md:h-screen w-full py-48" id="about">
+        <h1 className="font-bold text-5xl tracking-widest">About</h1>
+        <br></br>
         <p className="text-lg">
           I am a career switcher from the education to the tech industry.
         </p>
