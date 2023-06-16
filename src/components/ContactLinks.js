@@ -11,11 +11,15 @@ const ContactLinks = () => {
         id="contact"
       >
         <p>Contact Me!</p>
-        <img src={email} alt="email" width="30" height="30" />
-        <div className="rounded-full ">
+        <a href="mailto:sohsinghian@gmail.com">
+          <img src={email} alt="email" width="30" height="30" />
+        </a>
+        <a href="https://www.linkedin.com/in/sohsinghian/">
           <img src={linkedin} alt="linkedin" width="30" height="30" />
-        </div>
-        <img src={github} alt="github" width="30" height="30" />
+        </a>
+        <a href="https://github.com/sohsinghian">
+          <img src={github} alt="github" width="30" height="30" />
+        </a>
       </div>
     </>
   );
