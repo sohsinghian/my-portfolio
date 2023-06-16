@@ -9,7 +9,7 @@ const Projects = () => {
             Projects
           </p>
           <div className="text-center py-20 text-3xl">
-            Under Construction...
+            Under Construction...!
           </div>
           {/* <div className="grid md:grid-cols-2 gap-8">In Construction...</div> */}
         </div>
