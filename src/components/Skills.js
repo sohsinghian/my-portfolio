@@ -32,7 +32,6 @@ const Skills = () => {
             <IndividualSkill src={github} name="Github" />
             <IndividualSkill src={avaloq} name="Avaloq" />
             <IndividualSkill src={plsql} name="PL/SQL" />
-            <IndividualSkill />
           </div>
         </div>
       </div>
