@@ -16,8 +16,8 @@ const IndividualProject = (props) => {
           className="rounded-xl group-hover:opacity-10"
           src={props.src}
           alt="broken"
-          width="600px"
-          height="600px"
+          width="700px"
+          height="700px"
           className="m-auto"
         />
         <p className="py-2 text-lg">{props.name}</p>
