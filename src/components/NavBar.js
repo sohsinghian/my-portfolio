@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
@@ -7,7 +6,7 @@ const NavBar = () => {
     <>
       <header className="flex flex-row justify-between">
         <nav className="fixed w-full h-16 z-[100] bg-slate-100">
-          <ul className="flex flex-row ml-10 my-4">
+          <ul className="flex flex-row mr-10 my-4 float-right">
             <li className="mr-10 hover:font-bold">
               <HashLink to="/#" smooth>
                 Home
