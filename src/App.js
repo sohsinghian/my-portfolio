@@ -11,12 +11,14 @@ function App() {
   return (
     <>
       <NavBar />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      {/* <Contact /> */}
-      <ContactLinks />
+      {/* <main class="flex flex-col"> */}
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        {/* <Contact /> */}
+        <ContactLinks />
+      {/* </main> */}
     </>
   );
 }

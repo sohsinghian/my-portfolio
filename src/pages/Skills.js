@@ -16,9 +16,11 @@ import python from "../images/python.png";
 const Skills = () => {
   return (
     <>
-      <section class="flex flex-col text-center px-10 pt-32" id="skills">
-        {/* <div class="max-w-[1240px] mx-auto flex flex-col justify-center h-full"> */}
-        <p class="mb-6 font-bold text-5xl tracking-widest text-center">
+      <section
+        class="flex flex-col sm:justify-start sm:h-full md:justify-center md:h-screen lg:justify-center lg:h-screen text-center px-10"
+        id="skills"
+      >
+        <p class="mb-6 font-bold text-4xl tracking-widest text-center">
           Skills
         </p>
         <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
