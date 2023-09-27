@@ -1,5 +1,5 @@
 import React from "react";
-import IndividualProject from "./IndividualProject";
+import IndividualProject from "../components/IndividualProject";
 import glassBridge from "../images/glass-bridge-game.png";
 import finance from "../images/finance.png";
 import happeats from "../images/happeats.png";
@@ -10,13 +10,13 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const Projects = () => {
   return (
     <>
-      <div className="w-full lg:h-screen p-2" id="projects">
-        <div className="max-w-[1240px] mx-auto px-2 py-16">
-          <p className="pb-8 font-bold text-5xl tracking-widest text-center">
+      <div class="w-full lg:h-screen p-2" id="projects">
+        <div class="max-w-[1240px] mx-auto px-2 py-16">
+          <p class="pb-8 font-bold text-5xl tracking-widest text-center">
             Projects
           </p>
           <div>
-            <div className="flex">
+            <div class="flex">
               <AliceCarousel>
                 <IndividualProject
                   src={glassBridge}
