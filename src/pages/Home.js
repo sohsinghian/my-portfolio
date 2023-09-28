@@ -1,4 +1,6 @@
 import React from "react";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -10,6 +12,25 @@ const Home = () => {
         <p class="text-3xl py-2 sm:text-xl md:text-2xl">
           I'm a Software Engineer.
         </p>
+        <div>
+          <div class="flex justify-between lg:w-1/3 sm:w-2/3 md:w-1/2 m-auto items-center py-4">
+            <a href="mailto:sohsinghian@gmail.com">
+              <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
+                <AiOutlineMail class="w-5 h-5" />
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/sohsinghian/">
+              <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
+                <FaLinkedinIn class="w-5 h-5" />
+              </div>
+            </a>
+            <a href="https://github.com/sohsinghian">
+              <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
+                <FaGithub class="w-5 h-5" />
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </>
   );

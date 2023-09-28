@@ -1,14 +1,11 @@
 import React from "react";
-// import email from "../images/email-icon.png";
-// import linkedin from "../images/linkedin-icon.png";
-// import github from "../images/github-icon.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <>
-      <footer class="bg-blue-200" id="contact">
+      <footer class="bg-slate-200" id="contact">
         <div class="flex justify-between w-1/2 m-auto items-center py-4">
           <a href="mailto:sohsinghian@gmail.com">
             <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
@@ -26,9 +23,9 @@ const Footer = () => {
             </div>
           </a>
         </div>
-        <div class="m-auto text-sm sm:text-xs w-full text-center p-5">
+        <p class="m-auto text-sm sm:text-xs w-full text-center p-5">
           Copyright &copy;2023 Soh Sing Hian. All Rights Reserved
-        </div>
+        </p>
       </footer>
     </>
   );

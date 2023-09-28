@@ -33,7 +33,7 @@ const IndividualProject = (props) => {
           className="uppercase font-bold px-4 py-2 mx-2 bg-sky-900 rounded text-white"
           onClick={handleButtonClick2}
         >
-          Code
+          Repo
         </button>
       </div>
     </>
