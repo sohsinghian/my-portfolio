@@ -1,36 +1,39 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
+import { NavHashLink } from "react-router-hash-link";
 
 const NavBar = () => {
+  const listStyle = "p-5 hover:bg-slate-200 hover:text-black";
+  // const activeStyle = "p-5 font-bold bg-slate-200 text-black";
+
   return (
     <>
-      <header class="flex flex-row justify-between lg:w-full h:screen">
-        <nav class="fixed w-full leading-5 z-[100] bg-blue-100">
-          <ul class="flex flex-row">
-            <li class="p-5 hover:font-bold">
-              <HashLink to="/#" smooth>
-                Home
-              </HashLink>
+      <header>
+        <nav class="fixed z-[100] w-full leading-4 bg-blue-950 text-white font-bold shadow-xl">
+          <ul class="flex flex-row sm:text-sm">
+            <li class={listStyle}>
+              <NavHashLink to="/#" smooth>
+                Home{" "}
+              </NavHashLink>
             </li>
-            <li class="p-5 hover:font-bold">
-              <HashLink to="/#about" smooth>
-                About
-              </HashLink>
+            <li class={listStyle}>
+              <NavHashLink to="/#about" smooth>
+                About{" "}
+              </NavHashLink>
             </li>
-            <li class="p-5 hover:font-bold">
-              <HashLink to="/#skills" smooth>
+            <li class={listStyle}>
+              <NavHashLink to="/#skills" smooth>
                 Skills
-              </HashLink>
+              </NavHashLink>
             </li>
-            <li class="p-5 hover:font-bold">
-              <HashLink to="/#projects" smooth>
+            <li class={listStyle}>
+              <NavHashLink to="/#projects" smooth>
                 Projects
-              </HashLink>
+              </NavHashLink>
             </li>
-            <li class="p-5 hover:font-bold">
-              <HashLink to="/#contact" smooth>
+            <li class={listStyle}>
+              <NavHashLink to="/#contact" smooth>
                 Contact
-              </HashLink>
+              </NavHashLink>
             </li>
           </ul>
         </nav>
