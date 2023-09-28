@@ -7,16 +7,16 @@ const NavBar = () => {
   return (
     <>
       <header>
-        <nav class="fixed z-[100] w-full leading-4 bg-blue-950 text-white font-bold shadow-xl">
+        <nav class="fixed z-[100] w-full leading-4 bg-blue-950 text-white font-bold shadow-xl opacity-90">
           <ul class="flex flex-row sm:text-sm sm:justify-between">
             <li class={listStyle}>
               <NavHashLink to="/#" smooth>
-                Home{" "}
+                Home
               </NavHashLink>
             </li>
             <li class={listStyle}>
               <NavHashLink to="/#about" smooth>
-                About{" "}
+                About
               </NavHashLink>
             </li>
             <li class={listStyle}>

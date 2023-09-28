@@ -76,7 +76,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            class="rounded-lg bg-blue-100 p-2 m-auto font-bol w-20"
+            class="rounded-lg bg-blue-100 p-2 m-auto font-bol w-20 font-bold hover:bg-blue-200"
           >
             Submit
           </button>
