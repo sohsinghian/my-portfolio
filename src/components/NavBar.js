@@ -2,14 +2,13 @@ import React from "react";
 import { NavHashLink } from "react-router-hash-link";
 
 const NavBar = () => {
-  const listStyle = "p-5 hover:bg-slate-200 hover:text-black";
-  // const activeStyle = "p-5 font-bold bg-slate-200 text-black";
+  const listStyle = "p-5 sm:p-2 hover:bg-slate-200 hover:text-black";
 
   return (
     <>
       <header>
         <nav class="fixed z-[100] w-full leading-4 bg-blue-950 text-white font-bold shadow-xl">
-          <ul class="flex flex-row sm:text-sm">
+          <ul class="flex flex-row sm:text-sm sm:justify-center">
             <li class={listStyle}>
               <NavHashLink to="/#" smooth>
                 Home{" "}
