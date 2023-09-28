@@ -1,6 +1,40 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = useRef();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "portfolio_contact_form",
+        "service_go4tp09",
+        form.current,
+        "3mK-N-0wgm7PY0SWn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setEmail("");
+    setName("");
+    setMessage("");
+  };
+
+  const handleEmailChange = (event) => setEmail(event.target.value);
+  const handleNameChange = (event) => setName(event.target.value);
+  const handleMessageChange = (event) => setMessage(event.target.value);
+
   return (
     <>
       <div
@@ -11,39 +45,38 @@ const Contact = () => {
           Contact Me
         </h1>
         <form
-          action=""
+          ref={form}
+          onSubmit={handleSubmit}
           class="flex flex-col w-screen sm:px-5 md:px-20 lg:px-40"
         >
           <input
             type="text"
-            name=""
-            value=""
+            value={name}
             placeholder="Name"
-            onChange=""
+            onChange={handleNameChange}
             class="p-2 m-2 rounded-sm bg-slate-100"
           />
           <input
             type="email"
-            name=""
-            value=""
+            value={email}
             placeholder="Email"
-            onChange=""
+            onChange={handleEmailChange}
             class="p-2 m-2 rounded-sm bg-slate-100"
           />
           <textarea
             name="message"
-            value=""
+            value={message}
             placeholder="Message"
-            onChange=""
+            onChange={handleMessageChange}
             class="p-2 m-2 rounded-sm bg-slate-100"
             rows="5"
             cols="50"
           ></textarea>
-          <button type="submit" class="rounded-lg bg-blue-100 p-2 m-2 font-bold">
+          <button
+            type="submit"
+            class="rounded-lg bg-blue-100 p-2 m-auto font-bol w-20"
+          >
             Submit
-          </button>
-          <button type="reset" class="rounded-lg bg-blue-100 p-2 m-2 font-bold">
-            Clear
           </button>
         </form>
       </div>
