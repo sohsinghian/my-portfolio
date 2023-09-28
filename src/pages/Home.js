@@ -13,7 +13,7 @@ const Home = () => {
           I'm a Software Engineer.
         </p>
         <div>
-          <div class="flex justify-between lg:w-1/3 sm:w-2/3 md:w-1/2 m-auto items-center py-4">
+          <div class="flex justify-between lg:w-1/3 sm:w-2/3 md:w-1/2 m-auto items-center py-10">
             <a href="mailto:sohsinghian@gmail.com">
               <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
                 <AiOutlineMail class="w-5 h-5" />

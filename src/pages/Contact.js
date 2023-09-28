@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "portfolio_contact_form",
-        "service_go4tp09",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "3mK-N-0wgm7PY0SWn"
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -50,6 +50,7 @@ const Contact = () => {
           class="flex flex-col w-screen sm:px-5 md:px-20 lg:px-40"
         >
           <input
+            name="user_name"
             type="text"
             value={name}
             placeholder="Name"
@@ -57,6 +58,7 @@ const Contact = () => {
             class="p-2 m-2 rounded-sm bg-slate-100"
           />
           <input
+            name="user_email"
             type="email"
             value={email}
             placeholder="Email"
