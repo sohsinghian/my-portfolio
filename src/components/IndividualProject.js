@@ -11,26 +11,26 @@ const IndividualProject = (props) => {
   };
   return (
     <>
-      <div className="text-center w-full">
+      <div class="text-center w-full">
         <img
-          className="rounded-xl group-hover:opacity-10"
+          class="rounded-xl group-hover:opacity-10"
           src={props.src}
           alt="broken"
           width="700px"
           height="700px"
-          className="m-auto"
+          class="m-auto"
         />
-        <p className="py-2 text-lg">{props.name}</p>
+        <p class="py-2 text-lg">{props.name}</p>
         {props.button1 && (
           <button
-            className="uppercase font-bold px-4 py-2 mx-2 bg-sky-900 rounded text-white"
+            class="uppercase font-bold px-4 py-2 mx-2 bg-sky-900 rounded text-white"
             onClick={handleButtonClick1}
           >
             {props.button1}
           </button>
         )}
         <button
-          className="uppercase font-bold px-4 py-2 mx-2 bg-sky-900 rounded text-white"
+          class="uppercase font-bold px-4 py-2 mx-2 bg-sky-900 rounded text-white"
           onClick={handleButtonClick2}
         >
           Repo

@@ -79,7 +79,7 @@ const Contact = () => {
   return (
     <>
       <div
-        class="flex flex-col justify-center text-center h-screen"
+        class="flex flex-col justify-center text-center h-screen m-auto"
         id="contact"
       >
         <h1 class="mb-6 font-bold text-4xl tracking-widest text-center">
@@ -88,7 +88,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={handleSubmit}
-          class="flex flex-col w-screen sm:px-5 md:px-20 lg:px-40"
+          class="flex flex-col w-screen sm:px-5 md:px-20 lg:px-40 lg:w-3/4 mx-auto"
         >
           <input
             name="user_name"

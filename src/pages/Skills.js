@@ -37,7 +37,6 @@ const Skills = () => {
           <IndividualSkill src={plsql} name="PL/SQL" />
           <IndividualSkill src={python} name="Python" />
         </div>
-        {/* </div> */}
       </section>
     </>
   );
