@@ -4,7 +4,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const NavBar = () => {
   const listStyle = "p-5 sm:p-2 hover:bg-slate-200 hover:text-black";
-  const mobileListStyle = "p-3 bg-blue-100 text-black hover:bg-white";
+  const mobileListStyle =
+    "p-3 bg-blue-100 border-b-gray-400 border-solid border text-black hover:bg-white";
 
   const [mobileNav, setMobileNav] = useState(false);
 
@@ -46,8 +47,8 @@ const NavBar = () => {
               </NavHashLink>
             </li>
           </ul>
-          {mobileNav === true && (
-            <ul class="flex flex-col sm:text-sm sm:justify-between">
+          {mobileNav && (
+            <ul class="flex flex-col text-sm justify-between">
               <NavHashLink to="/#" smooth onClick={handleMobileNav}>
                 <li class={mobileListStyle}>Home</li>
               </NavHashLink>
@@ -65,7 +66,9 @@ const NavBar = () => {
               </NavHashLink>
 
               <NavHashLink to="/#contact" smooth onClick={handleMobileNav}>
-                <li class={mobileListStyle}>Contact</li>
+                <li class="p-3 bg-blue-100 text-black hover:bg-white">
+                  Contact
+                </li>
               </NavHashLink>
             </ul>
           )}
