@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
         <p class="m-auto text-sm sm:text-xs w-full text-center p-5">
-          Copyright &copy;2023 Soh Sing Hian. All Rights Reserved
+          Copyright &copy;2023 Soh Sing Hian. All Rights Reserved.
         </p>
       </footer>
     </>
