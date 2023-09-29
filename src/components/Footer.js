@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer class="bg-slate-200" id="contact">
-        <div class="flex justify-between w-1/2 m-auto items-center py-4">
+        <div class="flex justify-between max-w-[300px] m-auto items-center py-4">
           <a href="mailto:sohsinghian@gmail.com">
             <div class="rounded-full shadow-lg shadow-gray-400 bg-slate-100 p-4">
               <AiOutlineMail class="w-5 h-5" />
