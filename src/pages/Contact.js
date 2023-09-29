@@ -1,5 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -7,25 +9,64 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const form = useRef();
+  const sent = () =>
+    toast.success("Message sent successfully", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  const failed = () =>
+    toast.error("Failed to send message, please try again...", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  const emptyDetails = () =>
+    toast.error("Please fill in all details before submitting", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (!name || !email || !message) {
+      emptyDetails();
+    } else {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_SERVICE_ID,
+          process.env.REACT_APP_TEMPLATE_ID,
+          form.current,
+          process.env.REACT_APP_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            sent();
+          },
+          (error) => {
+            console.log(error.text);
+            failed();
+          }
+        );
+    }
     setEmail("");
     setName("");
     setMessage("");
@@ -80,6 +121,7 @@ const Contact = () => {
           >
             Submit
           </button>
+          <ToastContainer />
         </form>
       </div>
     </>
