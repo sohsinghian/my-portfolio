@@ -2,11 +2,14 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  const navigate = useNavigate();
 
   const form = useRef();
   const sent = () =>
@@ -70,6 +73,8 @@ const Contact = () => {
     setEmail("");
     setName("");
     setMessage("");
+
+    navigate("/#");
   };
 
   const handleEmailChange = (event) => setEmail(event.target.value);
