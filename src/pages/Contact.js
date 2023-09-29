@@ -9,8 +9,6 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const navigate = useNavigate();
-
   const form = useRef();
   const sent = () =>
     toast.success("Message sent successfully", {
@@ -73,8 +71,6 @@ const Contact = () => {
     setEmail("");
     setName("");
     setMessage("");
-
-    navigate("/#");
   };
 
   const handleEmailChange = (event) => setEmail(event.target.value);
